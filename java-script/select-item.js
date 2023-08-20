@@ -104,33 +104,33 @@ const kitchenAccessories = document.getElementById('k-accessories').addEventList
 });
 
 const cuttingBoardKitchenware = document.getElementById('cutting-board').addEventListener('click', function () {
-    addSelectedItemsEntry('cutting-board', '25.00');
+    addSelectedItemsEntry('Cutting Board', '25.00');
 });
 
 const homeCookerKitchenware = document.getElementById('home-cooker').addEventListener('click', function () {
-    addSelectedItemsEntry('home-cooker', '49.00');
+    addSelectedItemsEntry('Home Cooker', '49.00');
 });
 
 const sportCapSportswear = document.getElementById('sport-cap').addEventListener('click', function () {
-    addSelectedItemsEntry('sport-cap', '49.00');
+    addSelectedItemsEntry('Sports Back Cap', '49.00');
 });
 
 const fullJerseySportswear = document.getElementById('jersey-set').addEventListener('click', function () {
-    addSelectedItemsEntry('jersey-set', '69.00');
+    addSelectedItemsEntry('Full Jersey Set', '69.00');
 });
 
 const sportsCatesSportswear = document.getElementById('sports-cates').addEventListener('click', function () {
-    addSelectedItemsEntry('sports-cates', '159.00');
+    addSelectedItemsEntry('Sports cates', '159.00');
 });
 
 const singleRelaxChairFurniture = document.getElementById('relax-chair').addEventListener('click', function () {
-    addSelectedItemsEntry('relax-chair', '185.00');
+    addSelectedItemsEntry('Single Relax Chair', '185.00');
 });
 
 const childrenPlayFurniture = document.getElementById('children-play').addEventListener('click', function () {
-    addSelectedItemsEntry('children-play', '299.00');
+    addSelectedItemsEntry('Children play', '299.00');
 });
 
 const flexibleSofaFurniture = document.getElementById('flexible-sofa').addEventListener('click', function () {
-    addSelectedItemsEntry('flexible-sofa', '399.00');
+    addSelectedItemsEntry('Flexible Sofa', '399.00');
 });
