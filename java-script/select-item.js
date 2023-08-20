@@ -3,7 +3,12 @@ let totalPrice = 0;
 let discount = 0;
 let grandTotal = 0;
 
+const couponButton = document.getElementById('coupon-button');
+couponButton.disabled = true;
 
+
+const makePurchaseButton = document.getElementById('purchase-button');
+makePurchaseButton.disabled = true;
 
 
 function displayValue(idName, value) {
@@ -31,6 +36,19 @@ function updateTotalPrice() {
         totalPrice += selectedItemsPrice[i];
     }
     displayValue('total-price', totalPrice.toFixed(2));
+    if (totalPrice >= 200) {
+        couponButton.disabled = false;
+    }
+    else {
+        couponButton.disabled = true;
+    }
+
+
+    if (totalPrice >= 1) {
+        makePurchaseButton.disabled = false;
+    } else {
+        makePurchaseButton.disabled = true;
+    }
     updateGrandTotal();
 }
 
@@ -43,11 +61,8 @@ function couponCode() {
         discount = 20 * totalPrice / 100;
         displayValue('discount', discount.toFixed(2));
     }
-    else if (promoCode !== 'SELL200') {
-        alert('Please enter a valid coupon code');
-    }
     else {
-        alert('You have to purchased over 200 TK to use the coupon code "SELL200"');
+        alert('Please enter a valid coupon code for 20% discount');
     }
 }
 
