@@ -87,6 +87,9 @@ const goHomeButton = document.getElementById('go-home-button').addEventListener(
     displayValue('discount', discount.toFixed(2));
     displayValue('total', grandTotal.toFixed(2));
     displayValue('select-item', '');
+
+    couponButton.disabled = true;
+    makePurchaseButton.disabled = true;
 });
 
 
