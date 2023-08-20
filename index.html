@@ -42,29 +42,13 @@
     }
 </style>
 
-<!-- modal code -->
-<!-- <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-<div class="modal">
-    <div class="modal-box text-center py-20">
-        <div class="flex justify-center">
-            <img src="images/congo.png" alt="">
-        </div>
-        <h3 class="font-bold text-3xl">Congratulations</h3>
-        <p class="py-4 text-xl">Your Purchase the product</p>
-        <div class="modal-action justify-center">
-            <label id="go-home-button" for="my_modal_6" class="btn bg-pink-color border-0 text-white font-bold">Go Home
-            </label>
-        </div>
-    </div>
-</div> -->
-
 
 <body class="font-work-sans">
     <!-- header section -->
     <header class="bg-banner-background-color">
         <div class="container mx-auto">
             <div class="flex flex-col lg:flex-row justify-between mx-5 md:mx-10 lg:mx-10">
-                <div class="text-center flex flex-col justify-center">
+                <div class="text-center flex flex-col justify-center pt-10 md:pt-10 lg:pt-0">
                     <p class="text-2xl font-bold my-5">---SALE FEVER---</p>
                     <h1 class="text-5xl font-bold">Purchase TK 200 or <br> above & get <span class="text-pink-color">20%
                             off</span></h1>
@@ -78,6 +62,8 @@
         </div>
     </header>
 
+
+    <!-- Main section -->
     <main class="bg-main-bg-color">
         <section class="pt-24 container mx-auto">
             <section class="mx-5 md:mx-10 lg:mx-10 flex flex-col md:flex-col lg:flex-row justify-between gap-10">
@@ -324,7 +310,7 @@
 
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <div class="flex justify-center relative">
+                        <div class="relative">
                             <button id="purchase-button"
                                 class="btn bg-pink-color border-0 text-white font-bold absolute w-full"
                                 onclick="my_modal_5.showModal()">
@@ -339,7 +325,6 @@
                                 <h3 class="font-bold text-3xl">Congratulations</h3>
                                 <p class="py-4 text-xl">Your Purchase the product</p>
                                 <div class="modal-action justify-center">
-                                    <!-- if there is a button in form, it will close the modal -->
                                     <button id="go-home-button"
                                         class="btn bg-pink-color border-0 text-white font-bold">Go Home</button>
                                 </div>
