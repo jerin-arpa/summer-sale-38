@@ -324,9 +324,13 @@
 
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <button id="purchase-button" class="btn bg-pink-color border-0 w-full text-white font-bold"
-                            onclick="my_modal_5.showModal()">Make
-                            Purchase</button>
+                        <div class="flex justify-center relative">
+                            <button id="purchase-button"
+                                class="btn bg-pink-color border-0 text-white font-bold absolute w-full"
+                                onclick="my_modal_5.showModal()">
+                                Make Purchase
+                            </button>
+                        </div>
                         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box text-center py-20">
                                 <div class="flex justify-center">
